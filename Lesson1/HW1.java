@@ -3,7 +3,7 @@ package Lesson1;
 import java.util.Scanner;
 
 /**
- * Created by Max on 04.09.2015.
+ * Created by Max on 07.09.2015.
  */
 public class HW1 {
 
@@ -25,4 +25,3 @@ public class HW1 {
 
     }
 }
-
