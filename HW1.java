@@ -15,8 +15,6 @@ public class HW1 {
 
         System.out.println("Hi, Taras! this is example with Sysprint and Scanner");
 
-        System.out.println("one more try");
-        System.out.println("checking git");
         for(int x: nums){
             System.out.println("input val from 0 to 20 to be found");
             valtofound=sc.nextInt();
