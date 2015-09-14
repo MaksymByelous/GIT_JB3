@@ -8,7 +8,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
         Scanner sc=new Scanner(System.in);
 
         Circle circle = new Circle(0);
@@ -17,9 +16,8 @@ public class Main {
         Triangle triangle = new Triangle(3, 5);
         Rectangle rectangle = new Rectangle(2.89, 8);
 
-        System.out.println("Circle radius is " + circle.radius+" and square is  "+circle.square());
-        System.out.println("Triangle base side is " + triangle.base+" and height is  "+triangle.height+" and square is  "+triangle.square());
-        System.out.println("Rectangle sides are " + rectangle.a+", "+rectangle.b+" and square is  "+rectangle.square());
-
+        System.out.println(circle);
+        System.out.println(triangle);
+        System.out.println(rectangle);
     }
 }
