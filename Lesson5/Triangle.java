@@ -5,19 +5,16 @@ package Lesson5;
  */
 public class Triangle extends Figure {
     double square;
-    double a;
-    double b;
-    double c;
-    double p = ((a + b + c) / 2);
+    double base;
+    double height;
 
-    public Triangle(double a, double b, double c) {
-        this.a = a;
-        this.b = b;
-        this.c = c;
+    public Triangle(double base, double height) {
+        this.base = base;
+        this.height = height;
     }
 
     public double square() {
-        square = Math.sqrt((p * (p - a) * (p - b) * (p - c)));
+        square = (base* height)/2;
         return square;
     }
 }
