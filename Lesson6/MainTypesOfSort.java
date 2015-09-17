@@ -12,12 +12,12 @@ public class MainTypesOfSort {
         int[] arrayOne = {2, -45, 44, 23, 7, -3};
 
         System.out.println("Array One is " + Arrays.toString(arrayOne) + ". lets sort array One with Sys method");
-        Arrays.sort(arrayOne);
-        System.out.println("Sorted array One is " + Arrays.toString(arrayOne));
-        System.out.println("min of arrayone is" + arrayOne[0] + " and max is " + arrayOne[arrayOne.length - 1]);
-        System.out.println();
+     //   Arrays.sort(arrayOne);
+     //   System.out.println("Sorted array One is " + Arrays.toString(arrayOne));
+     //   System.out.println("min of arrayone is" + arrayOne[0] + " and max is " + arrayOne[arrayOne.length - 1]);
+     //   System.out.println();
 
-        int [] arrayTwo= bubbleSort(arrayOne);
+        int [] arrayTwo=Sort.bubbleSort(arrayOne);
 
     }
 }
