@@ -9,7 +9,7 @@ public class BubbleSort {
     int [] arrayThree = {5, 5, 56, 85, 2};
 
     void bubbleSort() {
-            for (int i = 1 - arrayThree.length; i > 0; i++) {
+        for (int i = arrayThree.length-1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
                 if (arrayThree[j] > arrayThree[j + 1]) {
                     int temp = arrayThree[j];
@@ -18,6 +18,8 @@ public class BubbleSort {
                 }
             }
         }
-        for (int x : arrayThree) System.out.print(x + " ");
+        for (int x : arrayThree) {
+            System.out.print(x + " ");
+        }
     }
 }
