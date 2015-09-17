@@ -17,7 +17,7 @@ public class MainTypesOfSort {
         System.out.println("min of arrayone is" + arrayOne[0] + " and max is " + arrayOne[arrayOne.length - 1]);
         System.out.println();
 
-        int [] arrayTwo= arrayOne.bubbleSort(arrayOne);
+        int [] arrayTwo= bubbleSort(arrayOne);
 
     }
 }
