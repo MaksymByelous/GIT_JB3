@@ -7,7 +7,7 @@ import java.util.Arrays;
  */
 public class Sort {
 
-    int[] bubbleSort(){
+    static int[] bubbleSort(){
           for (int i = Arrays.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
                 if (Arrays[j] > Arrays[j + 1]) {
@@ -20,7 +20,7 @@ public class Sort {
         return System.out.println("Sorted array is " + Arrays.toString(Arrays)+"min of array is" + Arrays[0] +
                 " and max is " + Arrays[Arrays.length - 1]);
     }
-    int[] selectionSort() {
+    static int[] selectionSort() {
         for (int i = 0; i < Arrays.length; i++) {
             int min = Arrays[i];
             int min_i = i;
