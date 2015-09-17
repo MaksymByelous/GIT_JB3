@@ -16,11 +16,11 @@ public class MainTypesOfSort {
         for (int x : arrayOne) System.out.print(x + " ");
         System.out.println();
 
-        System.out.println("sort array One with Selection method");
+        System.out.println("sort array Two with Selection method");
 
         System.out.println();
 
-        System.out.println("sort array One with Bubble method");
+        System.out.println("sort array Three with Bubble method");
 
     }
 }
