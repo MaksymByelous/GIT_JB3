@@ -7,36 +7,36 @@ import java.util.Arrays;
  */
 public class Sort {
 
-    static void bubbleSort(int[] Array){
-          for (int i = Array.length - 1; i > 0; i--) {
+    static int[] bubbleSort(int[] Array){
+        int[] clone = Array.clone();
+        for (int i = clone.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
-                if (Array[j] > Array[j + 1]) {
-                    int temp = Array[j];
-                    Array[j] = Array[j + 1];
-                    Array[j + 1] = temp;
+                if (clone[j] > clone[j + 1]) {
+                    int temp = clone[j];
+                    clone[j] = clone[j + 1];
+                    clone[j + 1] = temp;
                 }
             }
         }
-        System.out.println("Sorted array is " + Arrays.toString(Array)+" min of array is" + Array[0] +
-                " and max is " + Array[Array.length - 1]);
+        return clone;
     }
-    static void selectionSort(int[] Array) {
-        for (int i = 0; i < Array.length; i++) {
-            int min = Array[i];
+    static int[] selectionSort(int[] Array) {
+        int[] clone = Array.clone();
+        for (int i = 0; i < clone.length; i++) {
+            int min = clone[i];
             int min_i = i;
-            for (int j = i + 1; j < Array.length; j++) {
-                if (Array[j] < min) {
-                    min = Array[j];
+            for (int j = i + 1; j < clone.length; j++) {
+                if (clone[j] < min) {
+                    min = clone[j];
                     min_i = j;
                 }
             }
             if (i != min_i) {
-                int temp = Array[i];
-                Array[i] = Array[min_i];
-                Array[min_i] = temp;
+                int temp = clone[i];
+                clone[i] = clone[min_i];
+                clone[min_i] = temp;
             }
         }
-        System.out.println("Sorted array is " + Arrays.toString(Array)+"min of array is" + Array[0] +
-                " and max is " + Array[Array.length - 1]);
+        return clone;
     }
 }
