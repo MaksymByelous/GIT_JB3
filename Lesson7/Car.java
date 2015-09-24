@@ -27,7 +27,7 @@ public class Car {
     }
 
     void removeRoof () {
-        System.out.println("roof open");
+        System.out.println("roof is open");
     }
 
  //  public double FullNeeded() {
