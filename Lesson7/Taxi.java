@@ -7,9 +7,4 @@ public class Taxi extends Car {
     public Taxi(int passenger, int fuelconsumption, int number) {
         super(passenger, fuelconsumption, number);
     }
-
-    @Override
-    void ShowNumber() {
-        super.ShowNumber();
-    }
 }

@@ -1,11 +1,9 @@
 package Lesson7;
 
 public class Car {
-
-    int passenger;
-    int fuelconsumption;
-    int number;
-
+    private int passenger;
+    private int fuelconsumption;
+    private int number;
     public Car(int passenger, int fuelconsumption, int number) {
         this.passenger = passenger;
         this.fuelconsumption= fuelconsumption;
@@ -13,10 +11,8 @@ public class Car {
     }
     public Car() {
     }
-    void ShowNumber() {
-        System.out.println(" number is "+number);
-    }
-    void removeRoof () {
-        System.out.println("roof is open");
+    void carInfo() {
+        System.out.println(Car.class.getName()+" number is " + number + " It takes " + passenger + " passengers and need "
+                + fuelconsumption + " liters of gas per 100km");
     }
 }

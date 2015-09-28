@@ -7,9 +7,4 @@ public class Track extends Car {
     public Track(int passenger, int fuelconsumption, int number) {
         super(passenger, fuelconsumption, number);
     }
-
-    @Override
-    void ShowNumber() {
-        super.ShowNumber();
-    }
 }
