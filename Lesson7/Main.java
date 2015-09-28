@@ -14,23 +14,22 @@ public class Main {
         taxipark[1]=cabrio;
         taxipark[2]=track;
         taxipark[3]=minivan;
-        //как вывести количество элементов массива, не длинну
-        //как вывести имя класса к которому применяется метод
-        System.out.println("Taxi park contains 4 cars:");
+        int count=0;
+        for (Car elementOfArray : taxipark) {
+            if(elementOfArray != null){
+                count++;
+            }
+        }
+        System.out.println("Taxi park contains " + count + " cars:");
         try {
-            for (Car x : taxipark) {
-                System.out.print(x);
-                x.carInfo();
+            for (Car  elementOfArray: taxipark) {
+                if (elementOfArray != null) {
+                    elementOfArray.carInfo();
+                } else break;
             }
         } catch (NullPointerException e) {
                 System.err.println("taxipark isnt full") ;
         }
         System.out.print('\n');
-        try {
-            taxipark[122].toString();
-  //это частный случай а можно так чтобы при любом обращении за массив было так? следать трай на весь метод?
-        } catch (ArrayIndexOutOfBoundsException e) {
-            System.err.println("we have only 100 cars");
-       }
     }
 }

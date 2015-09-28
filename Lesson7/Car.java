@@ -12,7 +12,7 @@ public class Car {
     public Car() {
     }
     void carInfo() {
-        System.out.println(Car.class.getName()+" number is " + number + " It takes " + passenger + " passengers and need "
+        System.out.println(this.getClass().getSimpleName()+" number is " + number + " It takes " + passenger + " passengers and need "
                 + fuelconsumption + " liters of gas per 100km");
     }
 }
