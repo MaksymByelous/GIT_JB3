@@ -28,6 +28,7 @@ public class Main {
         System.out.print('\n');
         try {
             taxipark[122].toString();
+  //это частный случай а можно так чтобы при любом обращении за массив было так? следать трай на весь метод?
         } catch (ArrayIndexOutOfBoundsException e) {
             System.err.println("we have only 100 cars");
        }
