@@ -37,11 +37,11 @@ public class Main {
                     if (elementOfArray.getFuelTank() == "full") {
                         elementOfArray.drive();
                     } else throw new ParkException();
-                    }
                 }
-        }catch(ParkException e){
-                e.printStackTrace();
             }
+        } catch(ParkException e){
+                e.printStackTrace();
+        }
     }
 }
 
