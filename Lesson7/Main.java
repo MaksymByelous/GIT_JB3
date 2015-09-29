@@ -32,17 +32,16 @@ public class Main {
         System.out.print('\n');
         try {
 
-            for (Car elementOfArray2 : taxipark) {
-                if (elementOfArray2 != null) {
-                    if (taxipark[elementOfArray2].getFuelTank() == null) {
-                        taxipark[elementOfArray2].drive();
+            for (Car elementOfArray : taxipark) {
+                if (elementOfArray != null) {
+                    if (elementOfArray.getFuelTank() == "full") {
+                        elementOfArray.drive();
                     } else throw new ParkException();
-                    }  break;
+                    }
                 }
         }catch(ParkException e){
                 e.printStackTrace();
             }
-
     }
 }
 
