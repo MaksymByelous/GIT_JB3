@@ -30,17 +30,16 @@ public class Main {
             } else break;
         }
         System.out.print('\n');
-        try {
-
             for (Car elementOfArray : taxipark) {
                 if (elementOfArray != null) {
-                    if (elementOfArray.getFuelTank() == "full") {
+                    try {
+                        if (elementOfArray.getFuelTank().equals("full")) {
                         elementOfArray.drive();
-                    } else throw new ParkException();
-                }
-            }
-        } catch(ParkException e){
-                e.printStackTrace();
+                        } else throw new ParkException();
+                    }   catch(ParkException e){
+                            e.printStackTrace();
+                        } continue;
+                } break;
         }
     }
 }
