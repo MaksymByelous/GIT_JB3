@@ -37,7 +37,8 @@ public class Main {
                         elementOfArray.drive();
                         } else throw new ParkException();
                     }   catch(ParkException e){
-                            e.printStackTrace();
+                        System.out.print(elementOfArray.getClass().getSimpleName());
+                        e.printStackTrace();
                         } continue;
                 } break;
         }

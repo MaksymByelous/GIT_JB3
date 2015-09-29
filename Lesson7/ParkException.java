@@ -6,6 +6,6 @@ public class ParkException extends Exception {
 
     @Override
     public void printStackTrace(PrintStream s) {
-        System.out.println("some tank is empty, put gas to tank!");
+        System.out.println(" tank is empty, put gas to tank!");
     }
 }
