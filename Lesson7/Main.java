@@ -1,6 +1,7 @@
 package Lesson7;
 
 import com.sun.org.apache.xpath.internal.SourceTree;
+
 import java.io.IOException;
 
 import static Lesson7.Car.*;
@@ -30,17 +31,21 @@ public class Main {
             } else break;
         }
         System.out.print('\n');
-            for (Car elementOfArray : taxipark) {
-                if (elementOfArray != null) {
-                    try {
-                        if (elementOfArray.getFuelTank().equals("full")) {
+        for (Car elementOfArray : taxipark) {
+            if (elementOfArray != null) {
+                try {
+                    if (elementOfArray.getFuelTank().equals("full")) {
                         elementOfArray.drive();
-                        } else throw new ParkException();
-                    }   catch(ParkException e){
-                        System.out.print(elementOfArray.getClass().getSimpleName());
-                        e.printStackTrace();
-                        } continue;
-                } break;
+                    } else {
+                        throw new NoFuelException();
+                    }
+                } catch (NoFuelException e) {
+                    System.out.print(elementOfArray.getClass().getSimpleName());
+                    e.printStackTrace();
+                }
+                continue;
+            }
+            break;
         }
     }
 }
