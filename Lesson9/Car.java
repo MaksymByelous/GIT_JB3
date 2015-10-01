@@ -21,14 +21,9 @@ public class Car {
         this.fuelTank = fuelTank;
     }
 
-    //  @Override
-    //   public String toString() {
-    //       return super.toString(this.getClass().getSimpleName() + "    " + this.number+ "    "+ this.passenger+ "    "+ this.fuelConsumption);
-    //   }
-
     public void carInfo() {
-        System.out.println(this.getClass().getSimpleName() + " number is " + number + " It takes " + passenger + " passengers and need "
-                + fuelConsumption + " liters of gas per 100km" + ". Fuel tank is " + fuelTank);
+        System.out.println(this.getClass().getSimpleName() + "       " + number + "           " + passenger + "              "
+                + fuelConsumption + "          " + fuelTank);
     }
 
     void drive() {
@@ -39,5 +34,4 @@ public class Car {
         this.fuelTank = "full";
         System.out.println("fuel tank is full now, you can drive");
     }
-
 }
