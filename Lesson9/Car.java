@@ -1,6 +1,6 @@
 package Lesson9;
 
-public class Car {
+class Car {
     private int passenger;
     private int fuelConsumption;
     private int number;
