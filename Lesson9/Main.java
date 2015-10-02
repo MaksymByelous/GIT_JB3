@@ -16,7 +16,7 @@ class Main {
         taxiList.add(minivan);
 
         System.out.println("Taxi park contains " + taxiList.size() + " cars:");
-        System.out.println(" Car     |" +"|  Number  |" +"| Passengers |" +"| Lietrs/100km |"+"|   Tank  |");
+        System.out.println(" Car     |" +"|  Number  |" +"| Passengers |" +"| Liters/100km |"+"|   Tank  |");
         taxiList.forEach(Lesson9.Car::carInfoTable);
 
         System.out.print('\n');
