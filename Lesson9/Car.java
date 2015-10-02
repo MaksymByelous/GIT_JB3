@@ -21,9 +21,9 @@ class Car {
         this.fuelTank = fuelTank;
     }
 
-    public void carInfo() {
-        System.out.println(this.getClass().getSimpleName() + "       " + number + "           " + passenger + "              "
-                + fuelConsumption + "          " + fuelTank);
+    public void carInfoTable() {
+        System.out.println(this.getClass().getSimpleName() + "\t\t" + number + "\t\t\t" + passenger + "\t\t\t\t"
+                + fuelConsumption + "\t\t\t" + fuelTank);
     }
 
     void drive() {
