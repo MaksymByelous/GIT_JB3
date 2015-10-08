@@ -1,6 +1,6 @@
 package Lesson9;
 
-class Car {
+public class Car {
     private int passenger;
     private int fuelConsumption;
     private int number;
@@ -26,11 +26,11 @@ class Car {
                 + fuelConsumption + "\t\t\t" + fuelTank);
     }
 
-    void drive() {
+    public void drive() {
         System.out.println("you are driving " + this.getClass().getSimpleName() + "!");
     }
 
-    void gasToTank() {
+    public void gasToTank() {
         this.fuelTank = "full";
         System.out.println("fuel tank is full now, you can drive");
     }
