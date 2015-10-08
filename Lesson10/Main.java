@@ -40,5 +40,8 @@ class Main {
             carTableString.append(elementOfList.carInfoString());
         }
         System.out.println("Initial string: " + carTableString);
+        CaesarAlgorithm.encodeString(carTableString);
+        CaesarAlgorithm.decodeString(carTableString);
+
     }
 }
